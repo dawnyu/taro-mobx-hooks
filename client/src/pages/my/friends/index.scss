@@ -1,0 +1,95 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+
+.container {
+  width: 92vw;
+  height: 100vh;
+  padding: 0 4vw;
+  overflow: auto;
+  background: linear-gradient(#1D2045 30%, #1D2045, #2C2B40);
+  .header {
+    width: 100%;
+    display: flex;
+    position: relative;
+    height: 400px;
+    background-image: url(http://cdn.geekbuluo.com/jiangzuo-min.png);
+    background-size: 95% 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 184px;
+  }
+  .header-line {
+    font-size: 28px;
+    color: #fff;
+    padding-left: 10px;
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    &::before {
+      content: "";
+      margin-right: 2px;
+      width: 8px;
+      position: absolute;
+      left: -10px;
+      top: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgb(250, 52, 3), #f7b603);
+    }
+  }
+  .body {
+    .record-item {
+      height: 140px;
+      margin-bottom: 20px;
+      padding: 0 20px;
+      border-radius: 10px;
+      background-color: rgb(78, 75, 37);
+      color: #F9FCF6;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        display: flex;
+        width: 400px;
+        align-items: center;
+        view:nth-child(1) {
+          margin: 0 10px;
+          font-size: 36px;
+        }
+        view:nth-child(3) {
+          width: 260px;
+          flex-shrink: 0;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        image {
+          width: 90px;
+          height: 90px;
+          margin: 0 20px;
+          flex-shrink: 0;
+          border-radius: 50%;
+        }
+      }
+    }
+    .nofriends {
+      color: #fff;
+      margin-top: 30vh;
+      text-align: center;
+      button {
+        margin-top: 30px;
+        width: 180px;
+        font-size: 28px;
+        color: #2C2B40;
+        background: linear-gradient(to right, rgb(252, 206, 3), #cf9904);
+        height: 50px;
+        line-height: 50px;
+      }
+    }
+  }
+ 
+  .icon-yuanbao {
+    font-size: 30px;
+    color: #F8D253;
+  }
+
+}

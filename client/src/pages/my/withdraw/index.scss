@@ -1,0 +1,73 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+
+.container {
+  width: 96vw;
+  height: 100vh;
+  padding: 0 2vw;
+  overflow: auto;
+  background: linear-gradient(#1D2045 30%, #1D2045, #2C2B40);
+  .header {
+    font-size: 30px;
+    height: 80px;
+    line-height: 80px;
+    color: #fff;
+    background-color: rgb(23, 204, 99);
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 40px;
+    box-shadow: 4px 4px 10px rgb(11, 51, 2);
+  }
+  .body {
+    .trade-time {
+      font-size: 32px;
+      margin: 30px 0 10px;
+      color: #fff;
+    }
+    .record-item {
+      height: 220px;
+      margin-bottom: 10px;
+      padding: 0 20px;
+      font-size: 28px;
+      color: #333;
+      background: #fff;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      .left {
+         width: 550px;
+         font-size: 28px;
+         view {
+           margin-top: 12px;
+         }
+      }
+      .right {
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        .share {
+          background: linear-gradient(to right, rgb(250, 213, 3), #e2740c);
+        }
+        .down {
+          background: rgb(13, 168, 8);
+        }
+        .button {
+          height: 50px;
+          font-size: 24px;
+          line-height: 2.1;
+          color: #fff;
+          border: none;
+          margin: 8px 0;
+          padding: 0 10px;
+          &::after {
+            content: "";
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+}

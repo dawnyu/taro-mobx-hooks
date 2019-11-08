@@ -1,0 +1,273 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/modal.scss";
+@import "~taro-ui/dist/style/components/tabs.scss";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  .header-line {
+    font-size: 28px;
+    color: #fff;
+    padding-left: 10px;
+    position: relative;
+    margin: 20px 0;
+    &::before {
+      content: "";
+      margin-right: 2px;
+      width: 4px;
+      position: absolute;
+      left: -10px;
+      top: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgb(250, 52, 3), #f7b603);
+    }
+  }
+  .nav {
+    display: flex;
+    width: 750px;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    position: fixed;
+    background-color: #241F44;
+    border-radius: 6px 6px 0 0;
+    z-index: 9;
+    &-item {
+      width: 240px;
+      height: 130px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 28px;
+      &:active {
+        font-size: 26px;
+      }
+      view {
+        display: inline;
+      }
+      image {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+  .first-screen {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-image: url(http://cdn.geekbuluo.com/kaimen.png);
+    background-size: 650px 740px;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.651);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .close-first-screen {
+      position: absolute;
+      top: 70vh;
+      font-size: 28px;
+      color: rgb(179, 178, 178);
+    }
+    .text {
+      color: #f7b603;
+      position: absolute;
+      top: 20vh;
+      font-size: 48px;
+    }
+    .text1 {
+      color: #f7b603;
+      position: absolute;
+      top: 52vh;
+      font-size: 32px;
+    }
+
+    button {
+      width: 400px;
+      height: 500px;
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0;
+      top: 20%;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+  .atmodal-good {
+    position: relative;
+    z-index: 1004;
+    height: 800px;
+    text-align: center;
+    background: transparent;
+    .avatarUrl {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: 10px;
+    }
+    .nickName {
+      font-size: 26px;
+      text {
+        font-size: 38px;
+        color: red;
+      }
+    }
+    .share-title {
+      color: #333;
+      text-align: left;
+      font-size: 26px;
+      margin-top: 20px;
+    }
+    .share-button {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      .jujue {
+         width: 36%;
+         color: #999!important;
+       }
+
+       .auth {
+         width: 50%;
+       }
+      .button {
+        height: 70px;
+        font-size: 28px;
+        color: #fff;
+        border: none;
+        margin: 8px 0;
+
+        &::after {
+          content: "";
+          border: none;
+        }
+      }
+    }
+    &-label {
+      color: rgb(253, 125, 5);
+      text-align: center;
+      padding: 0 20px;
+      height: 500px;
+      background: rgb(250, 243, 177);
+
+      &-text {
+        font-size: 32px;
+
+        text {
+          font-size: 45px;
+          font-weight: bold;
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+  .atmodal-content {
+    position: relative;
+    z-index: 1004;
+    height: 800px;
+    text-align: center;
+    background: transparent;
+    &-label {
+      color: rgb(253, 195, 5);
+      text-align: center;
+      width: 500px;
+      height: 450px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url(http://cdn.geekbuluo.com/25e6e2982285693c4b91b015c6adb573-min.png);
+      background-size: 100% 100%;
+      padding-left: 10px;
+      &-text {
+        font-size: 32px;
+        text {
+          font-size: 45px;
+          font-weight: bold;
+          margin: 0 5px;
+        }
+      }
+    }
+    .modal-close {
+      margin-top: 150px;
+      .icon-guanbi {
+        font-size: 50px;
+        color: rgb(221, 172, 12);
+      }
+    }
+  }
+  .no-record {
+    height: 70vh;
+    width: 85vw;
+    margin-top: 2vh;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 30px;
+    .bg {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 100%;
+      height: 60%;
+      background-image: url(http://cdn.geekbuluo.com/null2.png);
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      text {
+        color: rgb(184, 184, 184);
+        margin: 0 auto 40px;
+      }
+    }
+  }
+  .nav-item {
+    position: relative;
+  }
+  .login {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .at-icon-close {
+    color: rgba(165, 164, 164, 0.541);
+    font-size: 50px;
+    margin-top: 80px;
+  }
+
+  .at-modal__container {
+    background-color: transparent;
+  }
+
+  .at-modal__overlay {
+    background-color: rgba(0, 0, 0, 0.76);
+  }
+  .at-tabs__header {
+    position: fixed;
+    z-index: 9999;
+  }
+}
+
+.good-item {
+  margin-top: 10px;
+  &:nth-child(1) {
+    margin-top: 96px;
+  }
+  &:nth-last-child(1) {
+    margin-bottom: 142px;
+  }
+}
+
+

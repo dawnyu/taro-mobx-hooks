@@ -1,0 +1,51 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/textarea.scss";
+@import "~taro-ui/dist/style/components/button.scss";
+
+.container {
+  width: 92vw;
+  height: 100vh;
+  padding: 0 4vw;
+  overflow: auto;
+  background: linear-gradient(#1D2045 30%, #1D2045, #2C2B40);
+
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin-top: 80px;
+
+    .user-avatar {
+      border-radius: 50%;
+      border: 6px solid #fff;
+      width: 150px;
+      height: 150px;
+      display: block;
+      overflow: hidden;
+    }
+  }
+
+  .body {
+    position: relative;
+    z-index: 1;
+    .textarea {
+      position: absolute;
+      top: -30px;
+      padding: 40px 20px;
+      font-size: 26px;
+      color: #1D2045;
+      border-radius: 10px;
+    }
+    .at-textarea__textarea {
+      height: 600px;
+    }
+  }
+  .at-button {
+    position: fixed;
+    bottom: 10px;
+    width: 92%;
+  }
+}

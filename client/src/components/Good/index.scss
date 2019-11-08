@@ -1,0 +1,60 @@
+.good-container {
+  background-color: #fff;
+  border: 1px solid transparent;
+  display: flex;
+  height: 140px;
+  margin: 20px 10px;
+  font-size: 28px;
+  .left {
+    flex-shrink: 0;
+    width: 200px;
+    .image {
+      width: 100%;
+      height: 140px;
+      border-radius: 6px;
+    }
+  }
+  .center {
+    margin:0 30px;
+    width: 390px;
+    flex-shrink: 0;
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+      overflow:hidden;
+      text-overflow:ellipsis;
+      display:-webkit-box;
+      -webkit-box-orient:vertical;
+      -webkit-line-clamp:2;
+    }
+    .tags {
+      text {
+        font-size: 20px;
+        background-color: rgb(231, 230, 230);
+        padding: 2px 8px;
+        border-radius: 3px;
+        margin: 0 6px;
+        color: rgb(139, 138, 138);
+      }
+    }
+  }
+
+  .right {
+    flex-shrink: 0;
+    width: 80px;
+    text-align: right;
+    font-size: 32px;
+    text-align: center;
+    display: flex;
+    color: rgb(245, 187, 28);
+    align-items: center;
+  }
+
+  .icon-jifenshangcheng {
+    font-size: 28px;
+    color: rgb(255, 168, 5);
+  }
+
+}

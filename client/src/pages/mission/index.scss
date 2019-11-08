@@ -1,0 +1,177 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/progress.scss";
+@import "~taro-ui/dist/style/components/modal.scss";
+@import '../../assets/font.wxss';
+
+.container {
+  width: 92vw;
+  height: 100vh;
+  padding: 0 4vw;
+  overflow: auto;
+  background: linear-gradient(#1D2143 30%, #1D2143, #2F265C);
+  .sign {
+    height: 180px;
+    margin-top: 50px;
+    view {
+      margin: 0 auto;
+      text-align: center;
+      border-radius: 50%;
+      background: linear-gradient(to right, rgb(127, 114, 185), rgb(80, 61, 172));
+      color: #fff;
+      animation: signAnimation 2s infinite;
+    }
+  }
+  .issign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 28px;
+    color: rgb(184, 182, 182);
+    text:nth-child(1) {
+      font-size: 160px;
+      font-weight: bolder;
+      line-height: 160px;
+      color: rgb(252, 208, 14);
+    }
+  }
+  @keyframes signAnimation {
+    0% {
+      width: 180px;
+      height: 180px;
+      font-size: 42px;
+      line-height: 180px;
+    }
+    50% {
+      width: 150px;
+      height: 150px;
+      font-size: 32px;
+      line-height: 150px;
+    }
+    100% {
+     width: 180px;
+     height: 180px;
+     font-size: 42px;
+     line-height: 180px;
+    }
+  }
+  .tabs-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 100px;
+    width: 450px;
+    height: 80px;
+    margin: 60px auto 80px;
+    padding: 0 8px;
+    background-color: #443A63;
+    text {
+      font-size: 28px;
+      color: #ffffff;
+      height: 66px;
+      width: 220px;
+      border-radius: 100px;
+      text-align: center;
+      line-height: 66px;
+      &.actived {
+        background-color: #5E50A6;
+      }
+    }
+  }
+  .body {
+    .item {
+      display: flex;
+      background: #443B64;
+      color: #fff;
+      padding: 0 20px;
+      border-radius: 10px;
+      height: 160px;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      image {
+        width: 120px;
+        height: 120px;
+      }
+      .right {
+        width: 500px;
+        .right-top {
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          &-add {
+            color: #F8D253;
+          }
+          .over {
+            font-size: 28px;
+            color: rgb(37, 194, 6);
+          }
+        }
+      }
+      .share {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        height: 160px;
+        opacity: 0;
+      }
+    }
+  }
+   .atmodal-content {
+     position: relative;
+     z-index: 1004;
+     height: 800px;
+     text-align: center;
+     background: transparent;
+
+     &-label {
+       color: rgb(253, 195, 5);
+       text-align: center;
+       width: 500px;
+       height: 450px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       padding-left: 20px;
+       background-image: url(http://cdn.geekbuluo.com/25e6e2982285693c4b91b015c6adb573-min.png);
+       background-size: 100% 100%;
+      &-title {
+         font-size: 38px;
+         font-weight: bold;
+         margin: 30px 0;
+      }
+       &-text {
+        font-size: 32px;
+       }
+     }
+     .modal-close {
+       margin-top: 150px;
+
+       .icon-guanbi {
+         font-size: 50px;
+         color: rgb(221, 172, 12);
+       }
+     }
+   }
+}
+  .at-icon-close {
+    color: rgba(165, 164, 164, 0.541);
+    font-size: 50px;
+    margin-top: 80px;
+  }
+  .icon-jifenshangcheng {
+    font-size: 30px;
+    margin-left: 4px;
+    color: #F8D253;
+  }
+
+  .at-modal__container {
+    background-color: transparent;
+  }
+
+  .at-modal__overlay {
+    background-color: rgba(0, 0, 0, 0.76);
+  }

@@ -1,0 +1,29 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/tabs.scss";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: start;
+  .item {
+    width: 140px;
+    margin: 30px 23px;
+    font-size: 26px;
+    text-align: center;
+    .image {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+    }
+    .title {
+      margin-top: 10px;
+    }
+  }
+}

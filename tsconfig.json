@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "lib",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "jsx": "preserve",
+    "jsxFactory": "Taro.createElement",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "global.d.ts"
+    ],
+    "paths": {
+      "@/components/*": ["./client/src/components/*"],
+      "@/utils": ["./client/src/utils/index.ts"],
+      "@/sdk": ["./client/src/utils/sdk.ts"],
+      "@/enum": ["/client/src/utils/enum/index.ts"],
+      "@/constant": ["./client/src/utils/constant.ts"],
+      "@/package": ["./client/package.json"],
+      "@/project": ["./client/project.config.json"],
+      "@/service/*": ["./client/src/service/*"],
+      "@/store/*": ["./client/src/store/*"],
+      "@/assets/*": ["./client/src/assets/*"],
+      "@/types/*": ["./client/src/types/*"],
+    },
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "compileOnSave": false
+}

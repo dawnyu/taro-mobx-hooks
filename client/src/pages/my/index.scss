@@ -1,0 +1,86 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+
+.container {
+  width: 92vw;
+  height: 100vh;
+  padding: 0 4vw;
+  overflow: auto;
+  background: linear-gradient(#1D2045 30%, #1D2045, #2C2B40);
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .crown {
+      width: 160px;
+      height: 120px;
+      position: absolute;
+      top: 0px;
+      margin-left: 26px;
+      transform: rotate(10deg);
+    }
+    .user-avatar {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-top: 80px;
+      flex-shrink: 0;
+      display: block;
+      overflow: hidden;
+    }
+
+    .user-nickname {
+      margin-top: 40px;
+      color: #fff;
+    }
+    .user-balance {
+      color: #fae209;
+      margin-top: 10px;
+      font-size: 32px;
+    }
+    .icon-jifenshangcheng {
+      font-size: 30px;
+      margin-left: 4px;
+      color: #fae209;
+    }
+  }
+  
+
+  .body {
+    margin-top: 60px;
+    .item {
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #443A64;
+      margin: 0 10px;
+      margin-bottom: 20px;
+      border: 1px solid transparent;
+      overflow: hidden;
+      padding: 0 20px;
+      border-radius: 20px;
+      .left {
+        font-size: 30px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        image {
+          width: 70px;
+          height: 80px;
+          margin: 0 30px;
+        }
+      }
+      .at-icon-play {
+        color: #9fa0c2;
+      }
+    }
+  }
+ 
+  .icon-yuanbao {
+    font-size: 40px;
+  }
+
+}

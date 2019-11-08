@@ -1,0 +1,98 @@
+.calendar-body {
+  padding-bottom: 1rem;
+}
+
+.calendar-body>view {
+  height: 3rem;
+  display: inline-block;
+  width: 14.28%;
+  text-align: center;
+  color: #828ba6;
+  position: relative;
+  font-size: 1rem;
+
+}
+
+// 分割线
+.calendar-line-divider {
+  border-top: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
+// 选中样式
+.calendar-selected>.calendar-date {
+  display: inline-block;
+  background-color: #90b1ef;
+  width: 2rem;
+  height: 1.3rem;
+  position: relative;
+  border-radius: 50%;
+  color: white;
+}
+
+// 范围选择
+.calendar-range>.calendar-date {
+  background-color: #90b1ef;
+  color: white;
+}
+
+// 范围选择起点
+.calendar-range-end>.calendar-date {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+// 范围选择终点
+.calendar-range-start>.calendar-date {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+// 当天
+.calendar-today {
+  font-weight: bolder;
+}
+
+// 非本月
+.not-this-month {
+  color: #e2e5e8 !important;
+}
+
+// 农历
+.lunar-day {
+  display: inline-block;
+  font-size: 2.5vw;
+  position: absolute;
+  top: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.7;
+  width: 2rem;
+}
+
+// 农历初一
+.lunar-month {
+  text-decoration-color: red;
+  text-decoration-line: underline;
+}
+
+// 标记
+.calendar-marked>.calendar-mark {
+  position: absolute;
+  background-color: #7096e0;
+  display: block;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  float: left;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// 额外信息
+.calendar-extra-info {
+  position: absolute;
+  right: 10px;
+  font-size: 2.3vw;
+  top: 0rem;
+  color: #FF9800;
+}

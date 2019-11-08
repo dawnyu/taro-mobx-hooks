@@ -1,0 +1,63 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+
+.container {
+  width: 92vw;
+  height: 100vh;
+  padding: 0 4vw;
+  overflow: auto;
+  background: linear-gradient(#1D2045 30%, #1D2045, #2C2B40);
+  .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    color: #fff;
+    text {
+      color: #F8D253;
+    }
+    .balance {
+      margin: 0 10px;
+    }
+  }
+
+  .body {
+    .record-item {
+      height: 120px;
+      margin-bottom: 10px;
+      padding: 0 20px;
+      font-size: 28px;
+      color: #1D2045;
+      background: #fff;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        view:nth-child(2) {
+          font-size: 32px;
+        }
+      }
+      .right {
+        font-size: 39px;
+        .icon-yuanbao {
+          color: #F8D253;
+          margin-left: 6px;
+        }
+        .in {
+          color: rgb(13, 168, 8);
+        }
+
+        .out {
+          color: rgb(238, 8, 8);
+        }
+      }
+    }
+  }
+ 
+  .icon-jifenshangcheng {
+    font-size: 30px;
+    margin-left: 4px;
+    color: #faae09;
+  }
+
+}

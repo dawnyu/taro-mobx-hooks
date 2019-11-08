@@ -1,0 +1,55 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/tabs.scss";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+.no-record {
+  height: 70vh;
+  width: 85vw;
+  margin-top: 2vh;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 30px;
+
+  .bg {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 60%;
+    background-image: url(http://cdn.geekbuluo.com/null2.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    text {
+      color: rgb(184, 184, 184);
+      margin: 0 auto 40px;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: start;
+  .item {
+    width: 140px;
+    margin: 30px 23px;
+    font-size: 26px;
+    text-align: center;
+    .image {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+    }
+    .title {
+      margin-top: 10px;
+    }
+  }
+}
