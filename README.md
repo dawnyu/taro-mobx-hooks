@@ -30,7 +30,6 @@ npm run dev:weapp
 <img src="http://cdn.geekbuluo.com/cut/WechatIMG313.jpeg" width="187" hegiht="333" align=center />
 <img src="http://cdn.geekbuluo.com/cut/WechatIMG310.png" width="187" hegiht="333" align=center />
 <img src="http://cdn.geekbuluo.com/cut/WechatIMG314.jpeg" width="187" hegiht="333" align=center />
-<img src="http://cdn.geekbuluo.com/cut/WechatIMG311.jpeg" width="187" hegiht="333" align=center />
 <img src="http://cdn.geekbuluo.com/cut/WechatIMG315.png" width="187" hegiht="333" align=center />
 <img src="http://cdn.geekbuluo.com/cut/WechatIMG312.jpeg" width="187" hegiht="333" align=center />
 </div>
