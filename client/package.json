@@ -38,7 +38,7 @@
 		"dayjs": "^1.8.16",
 		"eslint-plugin-react-hooks": "^2.0.1",
 		"mobx": "4.8.0",
-		"moment": "^2.24.0",
+		"moment": "^2.29.4",
 		"nerv-devtools": "^1.4.6",
 		"nervjs": "^1.4.6",
 		"react": "^16.9.0",
